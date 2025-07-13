@@ -2,6 +2,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import "/public/components/bootstrap-wysiwyg-master/external/google-code-prettify/prettify.css";
+import "/public/components/bootstrap-wysiwyg-master/index.css";
+import "/public/css/editor.css";
 import "/public/css/estilos.css";
 
 const geistSans = Geist({
@@ -30,6 +33,10 @@ export default function RootLayout({
         <link
           rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,400italic"
+        />
+        <link
+          href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css"
+          rel="stylesheet"
         />
       </head>
       <body
