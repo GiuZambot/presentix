@@ -1,11 +1,9 @@
-import "bootstrap/dist/css/bootstrap.min.css";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import "/public/components/bootstrap-wysiwyg-master/external/google-code-prettify/prettify.css";
 import "/public/components/bootstrap-wysiwyg-master/index.css";
 import "/public/css/editor.css";
-// Removed /public/css/estilos.css as styles are now componentized
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -30,12 +28,21 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        {/* Lato font import */}
         <link
           rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,400italic"
         />
+        {/* Bootstrap CSS from public directory for Glyphicons */}
         <link
-          href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css"
+          href="/components/bootstrap-3.2.0-dist/css/bootstrap.min.css"
+          rel="stylesheet"
+        />
+        {/* Original estilos.css re-added */}
+        <link href="/css/estilos.css" rel="stylesheet" />
+        {/* jQuery UI CSS for slider and draggable components */}
+        <link
+          href="/components/jquery-ui-1.11.2.custom/jquery-ui.min.css"
           rel="stylesheet"
         />
       </head>
@@ -43,6 +50,8 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
+        {/* Load jQuery using a standard script tag for global availability */}
+        <script src="/js/jquery-1.11.1.min.js"></script>
       </body>
     </html>
   );

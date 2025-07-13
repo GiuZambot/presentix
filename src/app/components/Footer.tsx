@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <footer className={styles.footer}>
       <div className={`row text-center-xs ${styles.row}`}>
-        <span className={styles.copyright}>Copyright 2014</span>
+        <span className={styles.copyright}>Copyright 2025</span>
         <Image
           src="/imagens/estrutura/logopresentix.png"
           alt="Presentix"

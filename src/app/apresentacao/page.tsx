@@ -4,6 +4,7 @@ import Presentation from "../Presentation";
 import apresentacoesStyles from "../apresentacoes/page.module.css"; // Import styles from apresentacoes for shared list
 import Footer from "../components/Footer";
 import Header from "../components/Header";
+import LegacyScriptLoader from "../components/LegacyScriptLoader"; // Import the new script loader component
 import styles from "./page.module.css";
 
 export default function Apresentacao() {
@@ -303,6 +304,8 @@ export default function Apresentacao() {
         </div>
       </div>
       <Footer />
+      {/* Load legacy scripts using the custom loader component */}
+      <LegacyScriptLoader />
     </>
   );
 }

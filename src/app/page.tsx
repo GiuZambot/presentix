@@ -3,14 +3,13 @@ import Link from "next/link";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import styles from "./page.module.css";
-import Presentation from "./Presentation";
 
 export default function Home() {
   return (
     <>
       <Header />
       <div className={styles.conteudo}>
-        <Presentation />
+        {/* <Presentation /> */}
         <div className={styles.panel1}>
           <h2 className={styles.panel1H2}>
             EXTREMAMENTE<strong> DINÂMICO</strong>
