@@ -1,0 +1,78 @@
+/* SIDEBAR */
+.sideBar {
+    margin: 55px 0;
+    -webkit-border-radius: 6px 0 0 6px;
+    border-radius: 6px 0 0 6px;
+    background: #446573;
+    padding: 15px 0;
+}
+
+.sideBar .userFoto {
+    width: 125px;
+    height: 125px;
+    border: 3px solid #fff;
+    margin: 15px auto;
+    float: none;
+}
+
+.sideBar .apde {
+    text-align: center;
+    display: block;
+    clear: both;
+    color: #fff;
+    font-size: 11px;
+}
+
+.sideBar h3 {
+    text-align: center;
+    color: #fff;
+}
+
+.menuSidebar {
+    list-style: none;
+    margin: 0;
+    padding: 25px 0;
+}
+
+.menuSidebar a {
+    display: block;
+    padding: 15px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    border-bottom: 1px solid #4e6d7a;
+}
+
+.menuSidebar a:hover {
+    text-decoration: none;
+    background: #a8b848;
+}
+
+.menuSidebar a .icon {
+    display: inline-block;
+    margin: 0 10px 3px 0;
+    width: 25px;
+    text-align: center;
+    vertical-align: bottom;
+}
+
+/* MINHAS APRESENTACOES */
+.optionsPress a {
+    float: left;
+    width: 30px;
+    height: 30px;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    background: #e5e5e5;
+    padding: 3px;
+    text-align: center;
+    margin: 5px 5px 0 0;
+}
+
+.optionsPress a:hover {
+    background: #a8b848;
+}
+
+.optionsPress a:last-child {
+    margin-right: 0;
+}

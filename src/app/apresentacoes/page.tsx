@@ -1,89 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
+import Footer from "../components/Footer";
+import Header from "../components/Header";
+import styles from "./page.module.css";
 
 export default function Apresentacoes() {
   return (
     <>
-      <header>
-        <div className="headerLine1">
-          <div className="row">
-            <div className="col-md-5 col-sm-5  col-xs-12 text-center-xs page-links">
-              <Link href="/sobre">sobre</Link> |{" "}
-              <Link href="/suporte">suporte</Link> |{" "}
-              <Link href="/contato">contato</Link> |{" "}
-              <Link href="/planos">planos</Link>
-            </div>
-            <div className="col-md-7  col-sm-7   col-xs-12 text-right socialLinks text-center-xs">
-              <Link href="#">
-                <Image
-                  src="/imagens/estrutura/facebook.png"
-                  alt="Facebook"
-                  width={32}
-                  height={32}
-                />
-              </Link>
-              <Link href="#">
-                <Image
-                  src="/imagens/estrutura/twitter.png"
-                  alt="Twitter"
-                  width={32}
-                  height={32}
-                />
-              </Link>
-              <Link href="#">
-                <Image
-                  src="/imagens/estrutura/plus.png"
-                  alt="Google Plus"
-                  width={32}
-                  height={32}
-                />
-              </Link>
-              <Link href="#">
-                <Image
-                  src="/imagens/estrutura/pintres.png"
-                  alt="Pinterest"
-                  width={32}
-                  height={32}
-                />
-              </Link>
-              <Link href="#">
-                <Image
-                  src="/imagens/estrutura/in.png"
-                  alt="LinkedIn"
-                  width={32}
-                  height={32}
-                />
-              </Link>
-            </div>
-          </div>
-        </div>
-        <div className="row header2">
-          <div className="col-md-4 col-sm-4  text-center-xs">
-            <Link href="/">
-              <Image
-                src="/imagens/estrutura/logopresentix.png"
-                alt="Presentix"
-                width={250}
-                height={48}
-              />
-            </Link>
-          </div>
-          <div className="col-md-4 col-sm-4 padBuscaXS">
-            <form action="/busca" className="formBusca">
-              <input type="text" name="txtBusca" placeholder="Busca por" />
-              <input type="submit" className="searchIcon" />
-            </form>
-          </div>
-          <div className="col-md-4 col-sm-4 text-right text-center-xs">
-            <div className="facaLogin">
-              <Link className="button" href="/cadastro">
-                Cadastre-se <strong>Grátis</strong>
-              </Link>
-              <Link href="/login">Login</Link>
-            </div>
-          </div>
-        </div>
-      </header>
+      <Header />
       <div className="conteudoInterno">
         <div className="row">
           <div className="col-xs-12">
@@ -95,18 +19,18 @@ export default function Apresentacoes() {
               habitasse platea dictumst. Pellentesque consectetur iaculis
               viverra.
             </p>
-            <ul id="listApres" className="apresentacoesLista">
+            <ul id="listApres" className={styles.apresentacoesLista}>
               <li>
                 <Link href="/apresentacao">
                   <Image
                     src="/imagens/estrutura/playList.png"
                     alt="Play"
-                    className="play"
+                    className={styles.play}
                     width={64}
                     height={64}
                   />
                   <span
-                    className="presentationBlock"
+                    className={styles.presentationBlock}
                     style={{
                       backgroundImage:
                         "url(/imagens/apresentacoes/5b312e7b515ea0a5441e392c025a0fac.png)",
@@ -120,12 +44,12 @@ export default function Apresentacoes() {
                   <Image
                     src="/imagens/estrutura/playList.png"
                     alt="Play"
-                    className="play"
+                    className={styles.play}
                     width={64}
                     height={64}
                   />
                   <span
-                    className="presentationBlock"
+                    className={styles.presentationBlock}
                     style={{
                       backgroundImage:
                         "url(/imagens/apresentacoes/880fc7b9445722d8f28bbe4915e9157d.gif)",
@@ -139,12 +63,12 @@ export default function Apresentacoes() {
                   <Image
                     src="/imagens/estrutura/playList.png"
                     alt="Play"
-                    className="play"
+                    className={styles.play}
                     width={64}
                     height={64}
                   />
                   <span
-                    className="presentationBlock"
+                    className={styles.presentationBlock}
                     style={{
                       backgroundImage:
                         "url(/imagens/apresentacoes/ea862beeaf21620ffc67aef1f9efc615.gif)",
@@ -158,12 +82,12 @@ export default function Apresentacoes() {
                   <Image
                     src="/imagens/estrutura/playList.png"
                     alt="Play"
-                    className="play"
+                    className={styles.play}
                     width={64}
                     height={64}
                   />
                   <span
-                    className="presentationBlock"
+                    className={styles.presentationBlock}
                     style={{
                       backgroundImage:
                         "url(/imagens/apresentacoes/44febb07d7fdd43d484596bdd1bebd8d.jpg)",
@@ -177,12 +101,12 @@ export default function Apresentacoes() {
                   <Image
                     src="/imagens/estrutura/playList.png"
                     alt="Play"
-                    className="play"
+                    className={styles.play}
                     width={64}
                     height={64}
                   />
                   <span
-                    className="presentationBlock"
+                    className={styles.presentationBlock}
                     style={{
                       backgroundImage:
                         "url(/imagens/apresentacoes/ca79df8b7815198c0e7dd132e69c46d9.jpg)",
@@ -196,12 +120,12 @@ export default function Apresentacoes() {
                   <Image
                     src="/imagens/estrutura/playList.png"
                     alt="Play"
-                    className="play"
+                    className={styles.play}
                     width={64}
                     height={64}
                   />
                   <span
-                    className="presentationBlock"
+                    className={styles.presentationBlock}
                     style={{
                       backgroundImage:
                         "url(/imagens/apresentacoes/fa9b639ee4a106c0b1fb56babc348e50.gif)",
@@ -215,12 +139,12 @@ export default function Apresentacoes() {
                   <Image
                     src="/imagens/estrutura/playList.png"
                     alt="Play"
-                    className="play"
+                    className={styles.play}
                     width={64}
                     height={64}
                   />
                   <span
-                    className="presentationBlock"
+                    className={styles.presentationBlock}
                     style={{
                       backgroundImage:
                         "url(/imagens/apresentacoes/5b312e7b515ea0a5441e392c025a0fac.png)",
@@ -234,12 +158,12 @@ export default function Apresentacoes() {
                   <Image
                     src="/imagens/estrutura/playList.png"
                     alt="Play"
-                    className="play"
+                    className={styles.play}
                     width={64}
                     height={64}
                   />
                   <span
-                    className="presentationBlock"
+                    className={styles.presentationBlock}
                     style={{
                       backgroundImage:
                         "url(/imagens/apresentacoes/880fc7b9445722d8f28bbe4915e9157d.gif)",
@@ -253,12 +177,12 @@ export default function Apresentacoes() {
                   <Image
                     src="/imagens/estrutura/playList.png"
                     alt="Play"
-                    className="play"
+                    className={styles.play}
                     width={64}
                     height={64}
                   />
                   <span
-                    className="presentationBlock"
+                    className={styles.presentationBlock}
                     style={{
                       backgroundImage:
                         "url(/imagens/apresentacoes/ea862beeaf21620ffc67aef1f9efc615.gif)",
@@ -272,12 +196,12 @@ export default function Apresentacoes() {
                   <Image
                     src="/imagens/estrutura/playList.png"
                     alt="Play"
-                    className="play"
+                    className={styles.play}
                     width={64}
                     height={64}
                   />
                   <span
-                    className="presentationBlock"
+                    className={styles.presentationBlock}
                     style={{
                       backgroundImage:
                         "url(/imagens/apresentacoes/44febb07d7fdd43d484596bdd1bebd8d.jpg)",
@@ -291,12 +215,12 @@ export default function Apresentacoes() {
                   <Image
                     src="/imagens/estrutura/playList.png"
                     alt="Play"
-                    className="play"
+                    className={styles.play}
                     width={64}
                     height={64}
                   />
                   <span
-                    className="presentationBlock"
+                    className={styles.presentationBlock}
                     style={{
                       backgroundImage:
                         "url(/imagens/apresentacoes/ca79df8b7815198c0e7dd132e69c46d9.jpg)",
@@ -310,12 +234,12 @@ export default function Apresentacoes() {
                   <Image
                     src="/imagens/estrutura/playList.png"
                     alt="Play"
-                    className="play"
+                    className={styles.play}
                     width={64}
                     height={64}
                   />
                   <span
-                    className="presentationBlock"
+                    className={styles.presentationBlock}
                     style={{
                       backgroundImage:
                         "url(/imagens/apresentacoes/fa9b639ee4a106c0b1fb56babc348e50.gif)",
@@ -328,21 +252,7 @@ export default function Apresentacoes() {
           </div>
         </div>
       </div>
-      <footer>
-        <div className="row text-center-xs">
-          <span className="copyright">Copyright 2014</span>
-          <Image
-            src="/imagens/estrutura/logopresentix.png"
-            alt="Presentix"
-            width={150}
-            height={29}
-          />
-          <Link href="/sobre">A Presentix</Link>
-          <Link href="/suporte">SUPORTE</Link>
-          <Link href="/contato">contato</Link>
-          <Link href="/planos">planos</Link>
-        </div>
-      </footer>
+      <Footer />
     </>
   );
 }

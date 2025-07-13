@@ -1,0 +1,54 @@
+/* HOME PAGE */
+.listaTema ul {
+    line-height: normal;
+    padding: 0;
+    margin: 0 auto 25px;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.listaTema ul li {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    padding: 0;
+    list-style: none;
+    margin: 15px 7px;
+    position: relative;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+.listaTema ul li img {
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+}
+
+.listaTema ul li .titleTema {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    text-align: center;
+    background: #98aa3a;
+    background: rgba(152, 170, 58, 0.8);
+    text-align: center;
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #fff;
+    padding-top: 65px;
+    box-sizing: border-box;
+    opacity: 0;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+}
+
+.listaTema ul li:hover .titleTema {
+    opacity: 1;
+}

@@ -1,0 +1,82 @@
+/* HEADER */
+.header {
+    background: #446573;
+}
+
+.headerLine1 {
+    background: #3d5a66;
+    padding: 10px;
+    color: #fff;
+}
+
+.page-links a {
+    color: #fff;
+    font-size: 12px;
+    display: inline-block;
+    padding: 0 5px;
+    font-weight: 300;
+}
+
+.socialLinks img {
+    margin-left: 15px;
+    display: inline-block;
+}
+
+.header2 {
+    padding: 15px 0;
+}
+
+.formBusca {
+    background: #41565f;
+    margin: 0 0;
+    height: 35px;
+    padding: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.formBusca input[type=text] {
+    background: none;
+    color: #fff;
+    float: left;
+    width: 80%;
+    border: none;
+}
+
+.formBusca input[type=submit] {
+    float: left;
+    width: 20%;
+    background: url(/imagens/estrutura/lupa.png) 80% center no-repeat;
+    border: none;
+    text-indent: -9999px;
+}
+
+.facaLogin .button {
+    margin-right: 15px;
+}
+
+.facaLogin a {
+    color: #fff;
+}
+
+.facaLogin.loged {
+    color: #fff;
+}
+
+.facaLogin.loged strong {
+    color: #fff;
+    font-size: 1.1em;
+}
+
+.facaLogin.loged a {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+@media (max-width: 767px) {
+    .padBuscaXS {
+        padding: 25px 10px;
+        text-align: center;
+        background: rgba(0, 0, 0, 0.2);
+        margin: 15px 0;
+    }
+}

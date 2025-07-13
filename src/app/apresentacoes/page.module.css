@@ -1,0 +1,70 @@
+/* APRESENTACOES LISTAGEM */
+.apresentacoesLista {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.apresentacoesLista:hover li {
+    opacity: 0.5;
+}
+
+.apresentacoesLista:hover li:hover {
+    opacity: 1;
+}
+
+.apresentacoesLista li {
+    display: inline-block;
+    width: 33%;
+    position: relative;
+    list-style: none;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 15px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+}
+
+.apresentacoesLista li .play {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 20%;
+    margin: -29% 0 0 -6%;
+}
+
+.apresentacoesLista li .presentationBlock {
+    display: block;
+    width: 100%;
+    padding-bottom: 60%;
+    -webkit-border-radius: 6px 6px 0 0;
+    border-radius: 6px 6px 0 0;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.apresentacoesLista li h3 {
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px;
+    background: #a8b848;
+    -webkit-border-radius: 0 0 6px 6px;
+    border-radius: 0 0 6px 6px;
+    margin: 0;
+}
+
+@media (max-width: 650px) {
+    .apresentacoesLista li {
+        width: 49%;
+    }
+}
+
+@media (max-width: 400px) {
+    .apresentacoesLista li {
+        width: 99%;
+    }
+}

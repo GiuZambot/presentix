@@ -1,0 +1,116 @@
+/* APRESENTACAO*/
+.presentFrame {
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    margin: 15px 0 5px;
+    border: none;
+}
+
+.presentationTitle {
+    color: #a8b848;
+    margin: 0 0 20px;
+}
+
+.pubIn {
+    display: inline-block;
+    margin-top: 14px;
+}
+
+.userName {
+    color: #446573;
+    margin: 0;
+    font-weight: 900;
+}
+
+.socialLinks .share {
+    display: inline-block;
+    margin: 35px 15px 0;
+    font-size: 14px;
+    color: #999;
+}
+
+.socialLinks img {
+    margin: 0 0 0 7px;
+}
+
+.commentForm {}
+
+.comentArea {
+    position: relative;
+}
+
+.comentArea .userFoto {
+    position: absolute;
+    left: 5px;
+    top: 0;
+}
+
+.comentArea p {
+    padding: 7px 0 7px 95px;
+    color: #999;
+    font-size: 14px;
+}
+
+.comentArea p strong {
+    color: #446573;
+}
+
+.comentArea textarea {
+    height: 155px;
+    padding-top: 25px;
+    text-indent: 100px;
+}
+
+.captchaLine {
+    padding: 25px 0;
+    float: left;
+}
+
+.captchaLine img {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.captchaLine input[type=text] {
+    display: inline-block;
+    width: auto;
+}
+
+.listaComentarios {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.listaComentarios li {
+    padding: 25px 0;
+}
+
+.listaComentarios li h5 {
+    font-size: 14px;
+    color: #666;
+    padding: 5px 5px 5px 100px;
+}
+
+.listaComentarios li h5 strong {
+    color: #446573;
+}
+
+.listaComentarios li p {
+    display: block;
+    margin: 10px;
+    position: relative;
+    background: #fff;
+    padding: 15px 15px 15px 90px;
+    border: 1px solid #e5e5e5;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #787878;
+}
+
+.listaComentarios li p .userFoto {
+    position: absolute;
+    left: 7px;
+    top: -35px;
+}

@@ -1,0 +1,245 @@
+/* HOME PAGE */
+
+.panel1 {
+    padding: 45px 0;
+}
+
+.panel1 h2 {
+    font-size: 45px;
+    color: #757575;
+    text-transform: uppercase;
+    font-weight: 300;
+    line-height: 1.2em;
+    text-align: center;
+}
+
+@media (max-width: 767px) {
+    .panel1 h2 {
+        font-size: 26px;
+    }
+}
+
+.panel1 h2 strong {
+    color: #446573;
+    font-weight: 600;
+}
+
+.panel2 p,
+.panel1 p {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 25px;
+    color: #757575;
+}
+
+.panel1 ul {
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+}
+
+.panel1 ul li {
+    display: inline-block;
+    height: 250px;
+    text-align: center;
+    font-size: 18px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.panel1 ul li img {
+    margin-bottom: 10px;
+}
+
+.panel2 {
+    background: #ededed;
+    padding: 65px 0;
+}
+
+.panel2 h3 {
+    font-size: 45px;
+    color: #757575;
+    text-transform: uppercase;
+    font-weight: 300;
+    line-height: 1.2em;
+    text-align: center;
+}
+
+@media (max-width: 767px) {
+    .panel2 h3 {
+        font-size: 26px;
+    }
+}
+
+.listaTema ul {
+    line-height: normal;
+    padding: 0;
+    margin: 0 auto 25px;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.listaTema ul li {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    padding: 0;
+    list-style: none;
+    margin: 15px 7px;
+    position: relative;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+.listaTema ul li img {
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+}
+
+.listaTema ul li .titleTema {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    text-align: center;
+    background: #98aa3a;
+    background: rgba(152, 170, 58, 0.8);
+    text-align: center;
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #fff;
+    padding-top: 65px;
+    box-sizing: border-box;
+    opacity: 0;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+}
+
+.listaTema ul li:hover .titleTema {
+    opacity: 1;
+}
+
+.topPresents {
+    float: left;
+    width: 520px;
+    margin: 15px;
+    text-align: center;
+}
+
+@media (max-width: 767px) {
+    .topPresents {
+        float: none;
+        width: 100%;
+        max-width: 520px;
+        margin: 15px auto;
+        text-align: center;
+    }
+}
+
+.topPresents .topNum1 {
+    position: relative;
+}
+
+.topPresents .topNum1 .play {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -51px 0 0 -51px;
+    cursor: pointer;
+}
+
+.topPresents .topNum1 .preview {
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.top3 {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.top3 li {
+    float: left;
+    width: 31%;
+    margin-right: 3%;
+    overflow: hidden;
+    position: relative;
+    margin-top: 15px;
+    list-style: none;
+}
+
+.top3 li .preview {
+    width: 100%;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.top3 li:hover .preview {
+    opacity: 0.7;
+    z-index: 10;
+    position: relative;
+}
+
+.top3 li .play {
+    position: absolute;
+    z-index: 1000;
+    left: 50%;
+    top: 50%;
+    margin: -25px 0 0 -25px;
+    width: 50px;
+    cursor: pointer;
+}
+
+.top3 li:last-child {
+    margin-right: 0;
+}
+
+.panel3 {
+    padding: 65px 0;
+}
+
+.panel3 h3 {
+    font-size: 45px;
+    color: #757575;
+    text-transform: uppercase;
+    font-weight: 300;
+    line-height: 1.2em;
+    text-align: left;
+}
+
+.panel3 h3 strong {
+    color: #446573;
+    font-weight: 900;
+    padding-top: 105px;
+    display: block;
+    font-size: 1.6em;
+}
+
+@media (max-width: 767px) {
+    .panel3 h3 {
+        text-align: center;
+        font-size: 26px;
+    }
+}
+
+.panel4 {
+    background: url(/imagens/home/fundo.jpg) center center no-repeat;
+    background-size: cover;
+    height: 550px;
+}
+
+.panel4 h3 {
+    text-align: center;
+    padding-top: 145px;
+    color: #fff;
+    display: block;
+    text-transform: uppercase;
+}

@@ -5,7 +5,7 @@ import "./globals.css";
 import "/public/components/bootstrap-wysiwyg-master/external/google-code-prettify/prettify.css";
 import "/public/components/bootstrap-wysiwyg-master/index.css";
 import "/public/css/editor.css";
-import "/public/css/estilos.css";
+// Removed /public/css/estilos.css as styles are now componentized
 
 const geistSans = Geist({
   variable: "--font-geist-sans",

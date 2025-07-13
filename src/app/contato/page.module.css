@@ -1,0 +1,87 @@
+/* FORMULARIOS */
+.boxCase {
+    background: #fff;
+    margin: 25px 0;
+    width: 100%;
+    padding: 25px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #e5e5e5;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.boxCaseGrid {
+    background: #fff;
+    margin: 20px 0;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #e5e5e5;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.boxCaseTitle {
+    margin: 0 0 15px;
+    font-size: 24px;
+    font-weight: 600;
+    color: #446573;
+}
+
+.formSection {
+    padding: 0 15px 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #e5e5e5;
+    color: #446573;
+    font-weight: 900;
+}
+
+.form label {
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    color: #787878;
+    padding-bottom: 7px;
+}
+
+.form input[type=text],
+.form input[type=email],
+.form input[type=date],
+.form input[type=password],
+.form textarea,
+.commentForm textarea,
+.commentForm input[type=text] {
+    border: 1px solid #c9c9c9;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 7px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    margin: 3px 0 0;
+}
+
+.form textarea {
+    resize: vertical;
+    min-height: 175px;
+}
+
+.form input[type=date] {
+    padding: 0 10px !important;
+}
+
+.form input[type=text]:focus,
+.form input[type=email]:focus,
+.form input[type=date]:focus,
+.form input[type=password]:focus,
+.form input[type=text]:focus,
+.form textarea:focus,
+.commentForm textarea:focus {
+    border-color: #a8b848;
+    color: #626e1a;
+    background: #f9ffd5;
+}

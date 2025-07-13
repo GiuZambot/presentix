@@ -1,111 +1,38 @@
 import Image from "next/image";
 import Link from "next/link";
 import Presentation from "../Presentation";
+import apresentacoesStyles from "../apresentacoes/page.module.css"; // Import styles from apresentacoes for shared list
+import Footer from "../components/Footer";
+import Header from "../components/Header";
+import styles from "./page.module.css";
 
 export default function Apresentacao() {
   return (
     <>
-      <header>
-        <div className="headerLine1">
-          <div className="row">
-            <div className="col-md-5 col-sm-5  col-xs-12 text-center-xs page-links">
-              <Link href="/sobre">sobre</Link> |{" "}
-              <Link href="/suporte">suporte</Link> |{" "}
-              <Link href="/contato">contato</Link> |{" "}
-              <Link href="/planos">planos</Link>
-            </div>
-            <div className="col-md-7  col-sm-7   col-xs-12 text-right socialLinks text-center-xs">
-              <Link href="#">
-                <Image
-                  src="/imagens/estrutura/facebook.png"
-                  alt="Facebook"
-                  width={32}
-                  height={32}
-                />
-              </Link>
-              <Link href="#">
-                <Image
-                  src="/imagens/estrutura/twitter.png"
-                  alt="Twitter"
-                  width={32}
-                  height={32}
-                />
-              </Link>
-              <Link href="#">
-                <Image
-                  src="/imagens/estrutura/plus.png"
-                  alt="Google Plus"
-                  width={32}
-                  height={32}
-                />
-              </Link>
-              <Link href="#">
-                <Image
-                  src="/imagens/estrutura/pintres.png"
-                  alt="Pinterest"
-                  width={32}
-                  height={32}
-                />
-              </Link>
-              <Link href="#">
-                <Image
-                  src="/imagens/estrutura/in.png"
-                  alt="LinkedIn"
-                  width={32}
-                  height={32}
-                />
-              </Link>
-            </div>
-          </div>
-        </div>
-        <div className="row header2">
-          <div className="col-md-4 col-sm-4  text-center-xs">
-            <Link href="/">
-              <Image
-                src="/imagens/estrutura/logopresentix.png"
-                alt="Presentix"
-                width={250}
-                height={48}
-              />
-            </Link>
-          </div>
-          <div className="col-md-4 col-sm-4 padBuscaXS">
-            <form action="/busca" className="formBusca">
-              <input type="text" name="txtBusca" placeholder="Busca por" />
-              <input type="submit" className="searchIcon" />
-            </form>
-          </div>
-          <div className="col-md-4 col-sm-4 text-right text-center-xs">
-            <div className="facaLogin">
-              <Link className="button" href="/cadastro">
-                Cadastre-se <strong>Grátis</strong>
-              </Link>
-              <Link href="/login">Login</Link>
-            </div>
-          </div>
-        </div>
-      </header>
+      <Header />
       <div className="conteudoInterno">
         <div className="row">
           <div className="col-xs-12">
             <Presentation />
-            <h1 className="presentationTitle">
+            <h1 className={styles.presentationTitle}>
               Apresentação Presentix: como obter resultados e impactar em uma
               apresentação
             </h1>
             <div className="row">
               <div className="col-sm-4 col-xs-12">
                 <div
-                  className="userFoto"
+                  className={styles.userFoto}
                   style={{ backgroundImage: "url(/imagens/usuarios/demo.jpg)" }}
                 ></div>
-                <span className="pubIn">Publicado por</span>
-                <h3 className="userName">
+                <span className={styles.pubIn}>Publicado por</span>
+                <h3 className={styles.userName}>
                   <Link href="/perfil">Daniel de Oliveira</Link>
                 </h3>
               </div>
-              <div className="col-sm-8 col-xs-12 text-right text-center-xs socialLinks">
-                <span className="share">Compartilhe:</span>
+              <div
+                className={`col-sm-8 col-xs-12 text-right text-center-xs ${styles.socialLinks}`}
+              >
+                <span className={styles.share}>Compartilhe:</span>
                 <Link href="#">
                   <Image
                     src="/imagens/estrutura/faceL.png"
@@ -149,18 +76,21 @@ export default function Apresentacao() {
               </div>
             </div>
             <h3 className="pageSubTitle">Veja também:</h3>
-            <ul id="listApres" className="apresentacoesLista">
+            <ul
+              id="listApres"
+              className={apresentacoesStyles.apresentacoesLista}
+            >
               <li>
                 <Link href="/apresentacao">
                   <Image
                     src="/imagens/estrutura/playList.png"
                     alt="Play"
-                    className="play"
+                    className={apresentacoesStyles.play}
                     width={64}
                     height={64}
                   />
                   <span
-                    className="presentationBlock"
+                    className={apresentacoesStyles.presentationBlock}
                     style={{
                       backgroundImage:
                         "url(/imagens/apresentacoes/5b312e7b515ea0a5441e392c025a0fac.png)",
@@ -174,12 +104,12 @@ export default function Apresentacao() {
                   <Image
                     src="/imagens/estrutura/playList.png"
                     alt="Play"
-                    className="play"
+                    className={apresentacoesStyles.play}
                     width={64}
                     height={64}
                   />
                   <span
-                    className="presentationBlock"
+                    className={apresentacoesStyles.presentationBlock}
                     style={{
                       backgroundImage:
                         "url(/imagens/apresentacoes/880fc7b9445722d8f28bbe4915e9157d.gif)",
@@ -193,12 +123,12 @@ export default function Apresentacao() {
                   <Image
                     src="/imagens/estrutura/playList.png"
                     alt="Play"
-                    className="play"
+                    className={apresentacoesStyles.play}
                     width={64}
                     height={64}
                   />
                   <span
-                    className="presentationBlock"
+                    className={apresentacoesStyles.presentationBlock}
                     style={{
                       backgroundImage:
                         "url(/imagens/apresentacoes/ea862beeaf21620ffc67aef1f9efc615.gif)",
@@ -217,22 +147,28 @@ export default function Apresentacao() {
                 Login
               </Link>
             </h3>
-            <div className="boxComent">
-              <form className="commentForm">
-                <div className="comentArea">
+            <div className={styles.boxComent}>
+              <form className={styles.commentForm}>
+                <div className={styles.comentArea}>
                   <div
-                    className="userFoto"
+                    className={styles.userFoto}
                     style={{
                       backgroundImage: "url(/imagens/usuarios/demo.jpg)",
                     }}
                   ></div>
-                  <p>
-                    Olá <strong>Daniel de Oliveira</strong> deixe seu
-                    comentário:
+                  <p className={styles.comentAreaP}>
+                    Olá{" "}
+                    <strong className={styles.comentAreaPStrong}>
+                      Daniel de Oliveira
+                    </strong>{" "}
+                    deixe seu comentário:
                   </p>
-                  <textarea required></textarea>
+                  <textarea
+                    required
+                    className={styles.comentAreaTextarea}
+                  ></textarea>
                 </div>
-                <div className="captchaLine">
+                <div className={styles.captchaLine}>
                   <Image
                     src="/imagens/estrutura/captcha.jpg"
                     alt="Captcha"
@@ -243,11 +179,12 @@ export default function Apresentacao() {
                     type="text"
                     required
                     placeholder="Digite o código de segurança"
+                    className={styles.captchaLineInputText}
                   />
                 </div>
                 <button
                   type="button"
-                  className="large right"
+                  className={`large right ${styles.buttonLarge} ${styles.buttonRight}`}
                   style={{ marginTop: "25px" }}
                 >
                   Postar Comentário
@@ -258,17 +195,17 @@ export default function Apresentacao() {
             <div className="alert alert-info" role="alert">
               Esta apresentação ainda não possuí nenhum comentário.
             </div>
-            <ul className="listaComentarios">
+            <ul className={styles.listaComentarios}>
               <li>
-                <h5>
-                  <strong>
+                <h5 className={styles.listaComentariosH5}>
+                  <strong className={styles.listaComentariosH5Strong}>
                     <Link href="/perfil">Daniel de Oliveira</Link>
                   </strong>{" "}
                   escreveu em 05/09/1993:
                 </h5>
-                <p>
+                <p className={styles.listaComentariosP}>
                   <span
-                    className="userFoto"
+                    className={styles.userFoto}
                     style={{
                       backgroundImage: "url(/imagens/usuarios/demo.jpg)",
                     }}
@@ -285,15 +222,15 @@ export default function Apresentacao() {
                 </p>
               </li>
               <li>
-                <h5>
-                  <strong>
+                <h5 className={styles.listaComentariosH5}>
+                  <strong className={styles.listaComentariosH5Strong}>
                     <Link href="/perfil">Daniel de Oliveira</Link>
                   </strong>{" "}
                   escreveu em 05/09/1993:
                 </h5>
-                <p>
+                <p className={styles.listaComentariosP}>
                   <span
-                    className="userFoto"
+                    className={styles.userFoto}
                     style={{
                       backgroundImage: "url(/imagens/usuarios/demo.jpg)",
                     }}
@@ -310,15 +247,15 @@ export default function Apresentacao() {
                 </p>
               </li>
               <li>
-                <h5>
-                  <strong>
+                <h5 className={styles.listaComentariosH5}>
+                  <strong className={styles.listaComentariosH5Strong}>
                     <Link href="/perfil">Daniel de Oliveira</Link>
                   </strong>{" "}
                   escreveu em 05/09/1993:
                 </h5>
-                <p>
+                <p className={styles.listaComentariosP}>
                   <span
-                    className="userFoto"
+                    className={styles.userFoto}
                     style={{
                       backgroundImage: "url(/imagens/usuarios/demo.jpg)",
                     }}
@@ -335,15 +272,15 @@ export default function Apresentacao() {
                 </p>
               </li>
               <li>
-                <h5>
-                  <strong>
+                <h5 className={styles.listaComentariosH5}>
+                  <strong className={styles.listaComentariosH5Strong}>
                     <Link href="/perfil">Daniel de Oliveira</Link>
                   </strong>{" "}
                   escreveu em 05/09/1993:
                 </h5>
-                <p>
+                <p className={styles.listaComentariosP}>
                   <span
-                    className="userFoto"
+                    className={styles.userFoto}
                     style={{
                       backgroundImage: "url(/imagens/usuarios/demo.jpg)",
                     }}
@@ -365,21 +302,7 @@ export default function Apresentacao() {
           </div>
         </div>
       </div>
-      <footer>
-        <div className="row text-center-xs">
-          <span className="copyright">Copyright 2014</span>
-          <Image
-            src="/imagens/estrutura/logopresentix.png"
-            alt="Presentix"
-            width={150}
-            height={29}
-          />
-          <Link href="/sobre">A Presentix</Link>
-          <Link href="/suporte">SUPORTE</Link>
-          <Link href="/contato">contato</Link>
-          <Link href="/planos">planos</Link>
-        </div>
-      </footer>
+      <Footer />
     </>
   );
 }

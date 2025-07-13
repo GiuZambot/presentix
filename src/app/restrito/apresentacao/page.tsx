@@ -2,6 +2,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect } from "react";
+import Footer from "../../components/Footer";
+import styles from "./page.module.css";
 
 // Modals
 const ConfigModal = () => (
@@ -667,7 +669,7 @@ export default function RestritoApresentacao() {
           ></div>
           <span>Olá Daniel.</span>
         </div>
-        <div className="commandos">
+        <div className={styles.commands}>
           <a
             className="hideSide glyphicon glyphicon-chevron-left"
             title="Configurações"
@@ -724,14 +726,9 @@ export default function RestritoApresentacao() {
       <div className="sidebar">
         <div className="positioner">
           <div className="zoomViewer"></div>
-          <div className="zoomBar">
-            <div className="zoomAdd">
-              <div className="glyphicon glyphicon-plus"></div>
-            </div>
-            <div id="slider-vertical" className="zoomScroll"></div>
-            <div className="zoomLess">
-              <div className="glyphicon glyphicon-minus"></div>
-            </div>
+          <div id="slider-vertical" className="zoomScroll"></div>
+          <div className="zoomLess">
+            <div className="glyphicon glyphicon-minus"></div>
           </div>
         </div>
         <div className="frameable">
@@ -790,6 +787,7 @@ export default function RestritoApresentacao() {
       <div className="apresContent">
         <div className="apresBoard"></div>
       </div>
+      <Footer />
     </>
   );
 }

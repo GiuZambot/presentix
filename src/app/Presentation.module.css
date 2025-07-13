@@ -1,0 +1,58 @@
+.presnetixdemo {
+    background: url(/imagens/apresentacoes/preview.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.commands {
+    position: absolute;
+    width: 260px;
+    padding: 5px;
+    left: 50%;
+    bottom: 10px;
+    margin: 0 0 0 -130px;
+    background: #ffffff;
+    background: -moz-linear-gradient(top, #ffffff 0%, #eeeeee 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #eeeeee));
+    background: -webkit-linear-gradient(top, #ffffff 0%, #eeeeee 100%);
+    background: -o-linear-gradient(top, #ffffff 0%, #eeeeee 100%);
+    background: -ms-linear-gradient(top, #ffffff 0%, #eeeeee 100%);
+    background: linear-gradient(to bottom, #ffffff 0%, #eeeeee 100%);
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+}
+
+.commands a {
+    display: inline-block;
+    margin: 5px 10px;
+    font-size: 20px;
+    color: #999;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    cursor: pointer;
+    vertical-align: top;
+}
+
+.commands a:last-child {
+    margin: 2px 5px 0;
+}
+
+.commands a img {
+    width: 25px;
+    display: inline-block;
+    margin-top: -5px;
+}
+
+.commands a:hover {
+    color: #a8b848;
+    text-decoration: none;
+}
+
+.commands input {
+    display: inline-block;
+    width: 35px;
+    background: #fff;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    text-align: center;
+    vertical-align: -webkit-baseline-middle;
+}

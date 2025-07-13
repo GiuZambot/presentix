@@ -1,0 +1,18 @@
+/* PROFILE */
+.profileInfo .userFoto {
+    clear: both;
+    display: block;
+    float: none;
+    margin: 55px auto 5px;
+}
+
+.profileInfo .apde {
+    display: block;
+    text-align: center;
+    color: #999;
+}
+
+.profileInfo a img {
+    width: 25px;
+    margin: 5px;
+}

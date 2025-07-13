@@ -1,0 +1,68 @@
+/* CONTEUDO */
+.conteudoInterno p {
+    color: #656565;
+    line-height: 1.5em;
+    font-size: 14px;
+}
+
+.conteudoInterno p.text-right {
+    text-align: right;
+}
+
+.titleSec {
+    text-transform: uppercase;
+    color: #565656;
+    font-weight: 300;
+}
+
+.titleSec strong {
+    font-weight: 900;
+    color: #446573;
+}
+
+.paddRow {
+    padding: 135px 0;
+}
+
+.sobreFinal {
+    background: url(../imagens/estrutura/mockupphone.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.sobreFinal h3 {
+    color: #fff;
+    text-align: center;
+}
+
+.sobreFinal p {
+    color: #fff;
+    text-align: center;
+    padding: 0 15%;
+}
+
+.pageTitle {
+    font-size: 3.5em;
+    color: #446573;
+    font-weight: 900;
+}
+
+.pageSubTitle {
+    font-size: 2.5em;
+    color: #446573;
+    font-weight: 300;
+    margin: 25px 0;
+}
+
+.msgAlert {
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: 900;
+    color: #c4c4c4;
+}
+
+.boxCaseGrid h2 {
+    font-size: 2em;
+    font-weight: 600;
+    letter-spacing: -0.05em;
+    color: #446573;
+}

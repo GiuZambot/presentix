@@ -1,100 +1,26 @@
 import Image from "next/image";
 import Link from "next/link";
+import Footer from "../../components/Footer";
+import Header from "../../components/Header";
+import styles from "./page.module.css";
 
 export default function RestritoEstatisticas() {
   return (
     <>
-      <header>
-        <div className="headerLine1">
-          <div className="row">
-            <div className="col-md-5 col-sm-5  col-xs-12 text-center-xs page-links">
-              <Link href="/sobre">sobre</Link> |{" "}
-              <Link href="/suporte">suporte</Link> |{" "}
-              <Link href="/contato">contato</Link> |{" "}
-              <Link href="/planos">planos</Link>
-            </div>
-            <div className="col-md-7  col-sm-7   col-xs-12 text-right socialLinks text-center-xs">
-              <Link href="#">
-                <Image
-                  src="/imagens/estrutura/facebook.png"
-                  alt="Facebook"
-                  width={32}
-                  height={32}
-                />
-              </Link>
-              <Link href="#">
-                <Image
-                  src="/imagens/estrutura/twitter.png"
-                  alt="Twitter"
-                  width={32}
-                  height={32}
-                />
-              </Link>
-              <Link href="#">
-                <Image
-                  src="/imagens/estrutura/plus.png"
-                  alt="Google Plus"
-                  width={32}
-                  height={32}
-                />
-              </Link>
-              <Link href="#">
-                <Image
-                  src="/imagens/estrutura/pintres.png"
-                  alt="Pinterest"
-                  width={32}
-                  height={32}
-                />
-              </Link>
-              <Link href="#">
-                <Image
-                  src="/imagens/estrutura/in.png"
-                  alt="LinkedIn"
-                  width={32}
-                  height={32}
-                />
-              </Link>
-            </div>
-          </div>
-        </div>
-        <div className="row header2">
-          <div className="col-md-4 col-sm-4  text-center-xs">
-            <Link href="/">
-              <Image
-                src="/imagens/estrutura/logopresentix.png"
-                alt="Presentix"
-                width={250}
-                height={48}
-              />
-            </Link>
-          </div>
-          <div className="col-md-4 col-sm-4 padBuscaXS">
-            <form action="/busca" className="formBusca">
-              <input type="text" name="txtBusca" placeholder="Busca por" />
-              <input type="submit" className="searchIcon" />
-            </form>
-          </div>
-          <div className="col-md-4 col-sm-4 text-right text-center-xs">
-            <div className="facaLogin loged">
-              Bem vindo <strong>Daniel Oliveira</strong> |{" "}
-              <Link href="/restrito/logout">Logout</Link>
-            </div>
-          </div>
-        </div>
-      </header>
+      <Header />
       <div className="conteudoInterno">
         <div className="row limite">
-          <div className="col-sm-3 col-xs-12 sideBar">
+          <div className={`col-sm-3 col-xs-12 ${styles.sideBar}`}>
             <div
-              className="userFoto"
+              className={styles.userFoto}
               style={{ backgroundImage: "url(/imagens/usuarios/demo.jpg)" }}
             ></div>
-            <span className="apde">Bem vindo</span>
-            <h3 className="userName">Daniel de Oliveira</h3>
-            <ul className="menuSidebar">
+            <span className={styles.apde}>Bem vindo</span>
+            <h3 className={styles.userName}>Daniel de Oliveira</h3>
+            <ul className={styles.menuSidebar}>
               <li>
                 <Link href="/restrito/perfil">
-                  <span className="icon">
+                  <span className={styles.icon}>
                     <Image
                       src="/imagens/estrutura/ico-perfil.png"
                       alt="Meu perfil"
@@ -107,7 +33,7 @@ export default function RestritoEstatisticas() {
               </li>
               <li>
                 <Link href="/restrito/minhasapresentacoes">
-                  <span className="icon">
+                  <span className={styles.icon}>
                     <Image
                       src="/imagens/estrutura/ico-present.png"
                       alt="Minhas apresentações"
@@ -120,7 +46,7 @@ export default function RestritoEstatisticas() {
               </li>
               <li>
                 <Link href="/restrito/meustemplates">
-                  <span className="icon">
+                  <span className={styles.icon}>
                     <Image
                       src="/imagens/estrutura/ico-template.png"
                       alt="Meus templates"
@@ -133,7 +59,7 @@ export default function RestritoEstatisticas() {
               </li>
               <li>
                 <Link href="/restrito/compartilhadas">
-                  <span className="icon">
+                  <span className={styles.icon}>
                     <Image
                       src="/imagens/estrutura/ico-shared.png"
                       alt="Compartilhadas comigo"
@@ -146,7 +72,7 @@ export default function RestritoEstatisticas() {
               </li>
               <li>
                 <Link href="/restrito/biblioteca">
-                  <span className="icon">
+                  <span className={styles.icon}>
                     <Image
                       src="/imagens/estrutura/icon-lib.png"
                       alt="Bibliotecas"
@@ -159,7 +85,7 @@ export default function RestritoEstatisticas() {
               </li>
               <li>
                 <Link href="/restrito/estatisticas">
-                  <span className="icon">
+                  <span className={styles.icon}>
                     <Image
                       src="/imagens/estrutura/ico-estatistica.png"
                       alt="Estatísticas"
@@ -172,7 +98,7 @@ export default function RestritoEstatisticas() {
               </li>
               <li>
                 <Link href="/restrito/logout">
-                  <span className="icon">
+                  <span className={styles.icon}>
                     <Image
                       src="/imagens/estrutura/ico-sair.png"
                       alt="Sair"
@@ -195,21 +121,7 @@ export default function RestritoEstatisticas() {
           </div>
         </div>
       </div>
-      <footer>
-        <div className="row text-center-xs">
-          <span className="copyright">Copyright 2014</span>
-          <Image
-            src="/imagens/estrutura/logopresentix.png"
-            alt="Presentix"
-            width={150}
-            height={29}
-          />
-          <Link href="/sobre">A Presentix</Link>
-          <Link href="/suporte">SUPORTE</Link>
-          <Link href="/contato">contato</Link>
-          <Link href="/planos">planos</Link>
-        </div>
-      </footer>
+      <Footer />
     </>
   );
 }
