@@ -1,19 +1,12 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import "/public/components/bootstrap-wysiwyg-master/external/google-code-prettify/prettify.css";
-import "/public/components/bootstrap-wysiwyg-master/index.css";
-import "/public/css/editor.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
+// import "/public/components/bootstrap-wysiwyg-master/external/google-code-prettify/prettify.css";
+// import "/public/components/bootstrap-wysiwyg-master/index.css";
+// import "/public/css/editor.css";
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+// Amplify.configure(outputs);
+
 
 export const metadata: Metadata = {
   title: "Presentix",
@@ -46,10 +39,10 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
+      <body>
+        {/* <Authenticator.Provider> */}
+          {children}
+        {/* </Authenticator.Provider> */}
         {/* Load jQuery using a standard script tag for global availability */}
         <script src="/js/jquery-1.11.1.min.js"></script>
       </body>
