@@ -16,7 +16,13 @@ function LoggedInScreen() {
   useEffect(() => {
     console.log(user);
   }, [user]);
-  return <button onClick={signOut}>Logout</button>;
+  return (
+    <div className="row limite">
+      <div className="col-xs-12 p-5 m-5">
+        <button onClick={signOut}>Logout</button>
+      </div>
+    </div>
+  );
 }
 
 export default function Login() {
